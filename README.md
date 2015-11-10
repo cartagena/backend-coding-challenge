@@ -1,3 +1,32 @@
+Building and running
+====
+
+## Dependencies
+All you need is Java 8 and a MySQL Server installed.
+
+### Creating the database
+In order to create the database, run the following command:
+
+    $> mysql -u root -p < src/main/resources/ddl.sql
+
+### Running the application
+All you need to do is run the command:
+
+    $> ./gradlew bootRun
+    
+Or the following if you are using Windows:
+    
+    $> ./gradlew.bat bootRun
+    
+#### What happens under the hood
+Gradle, the dependency/build tool used, will do the below:
+1.  Call Gulp build, so any changes in frontend code will be visible.
+2.  Copy the files generated in step before to `src/main/resources/static` folder.
+3.  Call Spring Boot plugin so it will compile the java code and start the application
+
+
+---
+
 Goal
 ====
 Produce a simple web-app backend to complement the supplied front-end code.
