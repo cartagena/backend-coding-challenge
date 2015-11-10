@@ -18,6 +18,8 @@ Or the following if you are using Windows:
     
     $> ./gradlew.bat bootRun
     
+After a few seconds, use your browser and go to http://localhost:8080.
+    
 #### What happens under the hood
 Gradle, the dependency/build tool used, will do the below:
 
