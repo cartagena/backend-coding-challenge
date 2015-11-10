@@ -20,9 +20,9 @@ Or the following if you are using Windows:
     
 #### What happens under the hood
 Gradle, the dependency/build tool used, will do the below:
-1.  Call Gulp build, so any changes in frontend code will be visible.
-2.  Copy the files generated in step before to `src/main/resources/static` folder.
-3.  Call Spring Boot plugin so it will compile the java code and start the application
+1. Call Gulp build, so any changes in frontend code will be visible.
+2. Copy the files generated in step before to `src/main/resources/static` folder.
+3. Call Spring Boot plugin so it will compile the java code and start the application
 
 
 ---
