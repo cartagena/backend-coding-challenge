@@ -27,6 +27,13 @@ Gradle, the dependency/build tool used, will do the below:
 2. Copy the files generated in step before to `src/main/resources/static` folder.
 3. Call Spring Boot plugin so it will compile the java code and start the application
 
+## Running with Docker and Docker compose
+If you do not have Java 8 and/or MySQL installed, you can run the application using [Docker](https://www.docker.com/) and [Docker Compose](https://docs.docker.com/compose/). Use the following command from the project folder:
+
+    $> ./gradlew build buildDocker
+    $> docker-compose -f src/main/docker/docker-compose.yml up -d
+    
+In a few seconds, use your browser and go to http://localhost:8080.
 
 ---
 
