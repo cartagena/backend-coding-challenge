@@ -21,6 +21,13 @@ app.controller("ctrlExpenses", ["$rootScope", "$scope", "Restangular", function 
 		changeYear: true,
 		dateFormat: "dd/mm/yy"
 	};
+	
+	$scope.sortType = 'date';
+	$scope.sortReverse = false;
+	$scope.order = function(sortType) {
+        $scope.sortReverse = ($scope.sortType === sortType) ? !$scope.sortReverse : false;
+        $scope.sortType = sortType;
+      };
 
 	var loadExpenses = function() {
 		// Retrieve a list of expenses via REST
